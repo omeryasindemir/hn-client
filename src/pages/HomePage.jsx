@@ -143,7 +143,7 @@ const NewsList = () => {
           ) : (
             <ul className="list-group">
               {news.map((story) => (
-                <li key={story.id} className="list-group-item">
+                <li key={story.id} className="list-group-item ff">
                   <a href={story.url} target="_blank" rel="noopener noreferrer">
                     {story.title}
                   </a>

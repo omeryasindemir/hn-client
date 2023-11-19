@@ -26,6 +26,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .btn-sm {
@@ -46,4 +48,12 @@
   color: #fff;
   background-color: #007bff;
   border-color: #007bff;
+}
+
+body{
+  background-color: #222;
+}
+
+.ff{
+  background-color: whitesmoke;
 }
