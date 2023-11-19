@@ -87,16 +87,17 @@ const NewsList = () => {
           </button>
           <h2>{selectedStory.title}</h2>
           <p>
-            <strong>Author:</strong> {selectedStory.by}
+          <strong><i className="bi bi-person"></i></strong> {selectedStory.by}
           </p>
           <p>
-            <strong>Likes:</strong> {selectedStory.score}
+          <strong><i className="bi bi-hearts"></i></strong> {selectedStory.score}
           </p>
           <p>
-            <strong>Comments:</strong> {selectedStory.kids ? selectedStory.kids.length : 0}
+            {selectedStory.kids ? selectedStory.kids.length : 0}
+            <strong> <i className="bi bi-chat-left-text"></i></strong>
           </p>
           <p>
-            <strong>Hours Ago:</strong>{" "}
+            <strong></strong>{" "}
             {calculateHoursAgo(selectedStory.time)}
           </p>
           <h3>Comments</h3>
