@@ -14,7 +14,7 @@ const NewsList = () => {
     axios
       .get("https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty")
       .then((response) => {
-        const topStoryIds = response.data.slice(0, 10);
+        const topStoryIds = response.data.slice(0, 30);
         return Promise.all(
           topStoryIds.map((storyId) =>
             axios.get(`https://hacker-news.firebaseio.com/v0/item/${storyId}.json?print=pretty`)
