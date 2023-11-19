@@ -67,7 +67,7 @@ const NewsList = () => {
 
   return (
     <div className={`container mt-4 ${darkTheme ? 'dark-theme' : ''}`}>
-      <h1 className="text-center mb-4">Hacker News Homepage</h1>
+      <h1 className="text-center mb-4">OSONEWS</h1>
       <div className="form-check form-switch">
         <input
           className="form-check-input"
@@ -133,11 +133,7 @@ const NewsList = () => {
                       className="btn btn-danger btn-sm float-end"
                       onClick={() => toggleBookmark(bookmark.url, bookmark.title)}
                     >
-<<<<<<< HEAD
                       Remove
-=======
-                      Delete
->>>>>>> 83f3964292620bb9bc9bddb572b1c37c0c6a456a
                     </button>
                   </li>
                 ))}
